@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fffafc;
+  color: #333;
+}
+
+/* ================= Header ================= */
+
+.main-header {
+  background: linear-gradient(to right, #f9c5d1, #fbcfe8);
+  padding: 60px 80px 90px;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav h1 {
+  font-size: 38px;
+  color: #7a294e;
+}
+
+.top-nav nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #7a294e;
+  font-weight: bold;
+}
+
+.header-content {
+  margin-top: 50px;
+  max-width: 520px;
+}
+
+.header-content h2 {
+  font-size: 40px;
+  color: #7a294e;
+}
+
+.header-content p {
+  margin: 18px 0;
+  font-size: 18px;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 13px 34px;
+  background: #7a294e;
+  color: white;
+  border-radius: 28px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ================= Small Header ================= */
+
+.small-header {
+  background: linear-gradient(to right, #f9c5d1, #fbcfe8);
+  padding: 28px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-header h2 {
+  color: #7a294e;
+}
+
+.small-header nav a {
+  margin-left: 22px;
+  text-decoration: none;
+  color: #7a294e;
+  font-weight: bold;
+}
+
+/* ================= Sections ================= */
+
+.section {
+  padding: 70px 90px;
+  text-align: center;
+}
+
+.section.light {
+  background: #fff0f5;
+}
+
+.section h2 {
+  margin-bottom: 40px;
+  color: #7a294e;
+  font-size: 32px;
+}
+
+/* ================= Cards ================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 35px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 22px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  transition: 0.35s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.card h3 {
+  margin: 16px 0 10px;
+  color: #7a294e;
+}
+
+.card p {
+  margin-bottom: 12px;
+}
+
+.card button,
+.btn-secondary {
+  background: #7a294e;
+  color: white;
+  border: none;
+  padding: 11px 26px;
+  border-radius: 22px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card button:hover,
+.btn-secondary:hover {
+  background: #5a1f3b;
+}
+
+/* ================= Reviews ================= */
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 28px;
+}
+
+.review {
+  background: white;
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.review h4 {
+  color: #7a294e;
+  margin-bottom: 8px;
+}
+
+/* ================= Contact (Global Section) ================= */
+
+.contact-global {
+  background: linear-gradient(135deg, #7a294e, #a23b72);
+  color: white;
+  padding: 70px 90px;
+  text-align: center;
+}
+
+.contact-global h2 {
+  margin-bottom: 28px;
+  font-size: 34px;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  margin-top: 35px;
+}
+
+.contact-card {
+  background: white;
+  color: #7a294e;
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.contact-card h4 {
+  margin-bottom: 10px;
+}
+
+.contact-card a {
+  color: #7a294e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* ================= Cart ================= */
+
+.cart-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  align-items: center;
+  background: white;
+  padding: 18px 22px;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.cart-item span {
+  font-weight: bold;
+}
+
+.cart-item button {
+  background: crimson;
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #7a294e;
+}
+
+/* ================= Cart Actions ================= */
+
+.cart-actions {
+  margin-top: 28px;
+}
+
+.cart-actions button {
+  padding: 11px 28px;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  margin: 0 12px;
+  background: #7a294e;
+  color: white;
+  font-weight: bold;
+}
+
+.cart-actions .danger {
+  background: crimson;
+}
+
+/* ================= Checkout ================= */
+
+.checkout {
+  max-width: 450px;
+  margin: 35px auto 0;
+  background: white;
+  padding: 32px;
+  border-radius: 26px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+  text-align: left;
+}
+
+.checkout h3 {
+  color: #7a294e;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.checkout input,
+.checkout textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.checkout button {
+  width: 100%;
+  background: #7a294e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.checkout button:hover {
+  background: #5a1f3b;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* ================= Footer ================= */
+
+footer {
+  text-align: center;
+  padding: 22px;
+  background: #fbcfe8;
+  color: #7a294e;
+  font-weight: bold;
+}
